@@ -6,6 +6,7 @@ interface BotManagerProps {
     pendingOrders: Order[];
     onAddBot: ()=> void;
     onRemoveBot: ()=> void;
+    timer?:number;
 }
 
 export const BotManager: React.FC<BotManagerProps> = ({bots, pendingOrders, onAddBot, onRemoveBot}) => {
@@ -38,6 +39,7 @@ export const BotManager: React.FC<BotManagerProps> = ({bots, pendingOrders, onAd
                             <span>{bot.id}</span>
                             <span> - </span>
                             <span>{bot.status}</span>
+                            {/* <span>{timer} s</span> */}
                         </li>
                     ))}
                 </ul>

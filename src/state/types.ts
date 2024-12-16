@@ -9,6 +9,7 @@ export interface Bot {
     status: "IDLE" | "PROCESSING";
     currentOrder?: Order;
     color: string;
+    // timer: number;
 }
 
 export interface State {
